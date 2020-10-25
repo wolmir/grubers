@@ -1,0 +1,112 @@
+@startuml
+namespace grubers.core {
+    class Account {
+        - id: String
+        + userId: String
+        + gameName: String
+        - grubersBalance: Number
+    }
+
+    class User {
+        id: String
+        email: String
+    }
+    class Game {
+        id: String
+        name: String
+    }
+
+    Account "1..*" -- "1" grubers.core.User
+    Account "1" -- Game
+}
+
+namespace grubers.trading_game {
+
+    class TradingGameAccount {
+        - currentTime: Number
+    }
+
+    class OrderType {
+        LIMIT
+        STOP
+        MARKET
+    }
+
+    class Product {
+        + ticker: String
+    }
+
+    class OrderStatus {
+        PENDING
+        FILLED
+        ERROR
+        CANCELLED
+    }
+
+    class OperationType {
+        BUY
+        SELL
+    }
+
+    class OrderError {
+        INSUFFICIENT_FUNDS
+    }
+
+    class OrderReceipt {
+        + price: Number
+        + units: Number
+        + grossAmount: Number
+        + commissionRate: Number
+        + commission: Number
+        + netAmmount: Number
+    }
+
+    class Holding {
+        + ticker: String
+        + units: Number
+        - accountId: String
+    }
+
+    TradingGameAccount "1" -- "0..*" Holding
+
+    class Order {
+        + accountId: String
+        + ticker: String
+        + type: OrderType
+        + price: Number
+        + stopLoss?: Number
+        + takeProfit?: Number
+        + units: Number
+        + operation: OperationType
+        + error: OrderError
+        - createdAt: Number
+        - filledAt: Number
+        - fillPrice: Number
+        - status: OrderStatus
+    }
+    Order "0..*" -- "1" TradingGameAccount
+    Order "0..*" -- "1" Product
+    Order -left- OrderStatus
+    Order -right- OrderError
+    Order -- OrderType
+    Order -- OperationType
+
+    Order -up- OrderReceipt
+    grubers.core.Account <|-- TradingGameAccount
+}
+
+namespace grubers.exchange {
+    class ExchangeAccount {
+        + btcBalance: Number
+        + bchBalance: Number
+        + daiBalance: Number
+        + ethBalance: Number
+        + ltcBalance: Number
+        + usdcBalance: Number
+    }
+
+    grubers.core.Account <|-- ExchangeAccount
+}
+
+
+@enduml

@@ -1,0 +1,88 @@
+{
+  "configVersion": 1,
+  "timestamp": 1597880666039,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.da7babaeecdef3448996.js",
+        "/manifest.webmanifest",
+        "/polyfills.a4021de53358bb0fec14.js",
+        "/runtime.e227d1a0e31cbccbf8ec.js",
+        "/styles.029a12fc6c3470b7373a.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/illus5.jpg",
+        "/assets/images/illus6.jpg",
+        "/assets/images/illus7.jpg",
+        "/assets/images/illus8.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "fab82552864831fd2d013d9df66314cf5144036b",
+    "/assets/icons/icon-144x144.png": "d7772b83abd77c1577a24e594cd3e74ca85f356d",
+    "/assets/icons/icon-152x152.png": "4aded443a6ac24b6ad0bdb0c1e07db517f054f98",
+    "/assets/icons/icon-192x192.png": "2aba1a4c8f237d3376f274efc5496d4b263e12ad",
+    "/assets/icons/icon-384x384.png": "cdf44c935aa731767f52edac8a55e6fb9ae62fc7",
+    "/assets/icons/icon-512x512.png": "8da0f57ac9ec40c42203a271eec65df3c2015264",
+    "/assets/icons/icon-72x72.png": "1f4693734ee3e673653d04f83bbdcce48a7d3822",
+    "/assets/icons/icon-96x96.png": "4996fbfa074df333d67a2e9606bdbe1deac34586",
+    "/assets/images/illus5.jpg": "d447b0d6c9b120deb5f41f7f6b1be3612db6ed88",
+    "/assets/images/illus6.jpg": "1694977af9f4d60e10d7705a7708c2db5587bdb4",
+    "/assets/images/illus7.jpg": "e269cad32df7583fb146737274715d2a8a17c8d2",
+    "/assets/images/illus8.jpg": "25a76161035913bff4b1480433f1efa8dfd60bde",
+    "/favicon.ico": "d797e55b32e71a19d272fd1a65624de328d83b38",
+    "/index.html": "fc7af7f4e0c88d381876155034b2b7bcf8b92b4d",
+    "/main.da7babaeecdef3448996.js": "9d9545eda237b7105aae730841dbea199973b248",
+    "/manifest.webmanifest": "4c5de9f9d40b51152a6e2328e345ef1340267eb5",
+    "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.029a12fc6c3470b7373a.css": "7431591543cd677ed80ec96fc3f14f7c930ce5da"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

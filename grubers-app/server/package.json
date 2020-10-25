@@ -1,0 +1,32 @@
+{
+  "name": "event-venues-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "stress": "./stress.sh \"node test.js\" \"node test.js\" \"node test.js\" \"node test.js\" \"node test.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coinbase-commerce-node": "^1.0.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "monk": "^7.3.0",
+    "monk-middleware-wrap-non-dollar-update": "^0.2.1",
+    "morgan": "^1.10.0",
+    "qrcode": "^1.4.4",
+    "seedrandom": "^3.0.5",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4"
+  }
+}
